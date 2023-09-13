@@ -1,3 +1,4 @@
+// Declare a constant variable called myObject
 const myObject = {
   type: 'object',
   value: 12
