@@ -3,4 +3,9 @@ const myObject = {
   type: 'object',
   value: 89
 };
+
+// Change the value property to 89
+myObject.value = 89
+
+// Print the updated object
 console.log(myObject);
