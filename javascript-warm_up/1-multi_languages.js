@@ -4,4 +4,4 @@ const value1 = "Python is cool";
 const value2 = "Javascript is amazing";
 
 // Use console.log() to print the value of myVar
-console.log(myVar + " " value1 + " " value2);
+console.log(myVar + " " + value1 + " " + value2);
