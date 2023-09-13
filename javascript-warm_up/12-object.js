@@ -1,12 +1,8 @@
-// Declare a constant variable called myObject
+// Declare a constant variable called myObject with the updated value
 const myObject = {
   type: 'object',
-  value: 12;
-
+  value: 89
 };
-// Change the value property to 89
-myObject.value = 89;
 
 // Print the updated object
 console.log(myObject);
-
