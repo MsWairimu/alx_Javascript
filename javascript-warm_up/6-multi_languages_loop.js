@@ -7,8 +7,3 @@ while (i < values.length) {
   console.log(values[i]);
   i++;
 }
-
-// Use a for loop to achieve the same result
-for (let j = 0; j < values.length; j++) {
-  console.log(values[j]);
-}
