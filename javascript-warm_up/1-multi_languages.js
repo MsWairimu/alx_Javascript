@@ -1,7 +1,7 @@
-// Declare a contant variable called myVar with the value "C is fun"
+// Declare a contant variable called myVar
 const myVar = "C is fun";
 const value1 = "Python is cool";
 const value2 = "Javascript is amazing";
 
-// Use console.log() to print the value of myVar
+// Use console.log() to print the values of myVar
 console.log(myVar + " " + value1 + " " + value2);
