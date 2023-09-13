@@ -1,2 +1,1 @@
-# alx_javascript
-JAVA
+readme file
