@@ -1,8 +1,10 @@
 // Declare an array of values
-const values = ["C is fun", "Python is cool", "Javascript is amazing"];
+const values = ["C is fun", "Python is cool", "JavaScript is amazing"];
 
-// Use a while loop to print each values on separate lines
+// Initialize a counter
 let i = 0;
+
+// Use a while loop to print each value on separate lines
 while (i < values.length) {
   console.log(values[i]);
   i++;
