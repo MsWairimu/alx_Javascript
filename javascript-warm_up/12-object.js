@@ -1,7 +1,7 @@
 //Declare a constant variable called myObject
 const myObject = {
   type: 'object',
-  value: 89
+  value: 12
 };
 
 // Change the value property to 89
