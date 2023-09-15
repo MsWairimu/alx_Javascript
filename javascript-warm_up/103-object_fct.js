@@ -7,15 +7,14 @@ const myObject = {
 
 console.log(myObject);
 
-function incr() {
+// Define the "incr" function to increment the "value" property
+myObject.incr = function () {
   if (typeof this.value === 'number') {
     this.value++;
   } else {
     console.error('Value is not a number.');
   }
-}
-
-myObject.incr = incr;
+};
 
 myObject.incr();
 console.log(myObject);
