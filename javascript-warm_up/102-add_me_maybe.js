@@ -1,4 +1,4 @@
-imports.addMeMaybe = (number, theFunction) {
+exports.addMeMaybe = (number, theFunction) {
   if (typeof number === 'number' && typeof theFunction === 'function') {
     number++; // Increment the number
     theFunction(number); // Call the provided function with the incremented number as an argument
