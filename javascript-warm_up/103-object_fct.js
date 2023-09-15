@@ -16,9 +16,3 @@ function incrementAndCall(number, theFunction) {
   }
 }
 
-// Example usage:
-function myFunction(result) {
-  console.log("The result is:", result);
-}
-
-incrementAndCall(5, myFunction); // This will call myFunction with the incremented value: "The result is: 6"
