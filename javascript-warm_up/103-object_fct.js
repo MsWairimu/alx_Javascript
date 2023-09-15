@@ -1,15 +1,26 @@
-function incrementAndCall(number, callback) {
-  if (typeof number === 'number' && typeof callback === 'function') {
-    const incrementedNumber = number + 1; // Increment the number
-    callback(incrementedNumber); // Call the provided callback function with the incremented number
-  } else {
-    console.error('Invalid arguments. The first argument must be a number, and the second argument must be a function.');
-  }
+function createObject(value) {
+  const obj = {
+    type: 'object',
+    value: value
+  };
+
+  obj.incr = function() {
+    obj.value++;
+  };
+
+  return obj;
 }
 
-// Example usage:
-function myFunction(result) {
-  console.log("The result is:", result);
-}
+const obj1 = createObject(12);
+const obj2 = createObject(13);
+const obj3 = createObject(14);
+const obj4 = createObject(15);
 
-incrementAndCall(5, myFunction); // This will call myFunction with the incremented value: "The result is: 6"
+console.log(obj1);
+console.log(obj2);
+console.log(obj3);
+console.log(obj4);
+
+// Increment the value of obj2
+obj2.incr();
+console.log(obj2);
