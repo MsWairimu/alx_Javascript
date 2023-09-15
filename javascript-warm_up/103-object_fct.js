@@ -1,26 +1,18 @@
-function createObject(value) {
-  const obj = {
-    type: 'object',
-    value: value
-  };
+#!/usr/bin/node
 
-  obj.incr = function() {
-    obj.value++;
-  };
+const myObject = {
+  type: 'object',
+  value: 12,
+  incr: function() {
+    this.value++;
+  }
+};
 
-  return obj;
-}
+console.log(myObject);
 
-const obj1 = createObject(12);
-const obj2 = createObject(13);
-const obj3 = createObject(14);
-const obj4 = createObject(15);
-
-console.log(obj1);
-console.log(obj2);
-console.log(obj3);
-console.log(obj4);
-
-// Increment the value of obj2
-obj2.incr();
-console.log(obj2);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
