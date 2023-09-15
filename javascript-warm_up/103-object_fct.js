@@ -1,24 +1,15 @@
-#!/usr/bin/node
-
-const myObject = {
-  type: 'object',
-  value: 12
-};
-
-console.log(myObject);
-
-// Define the "incr" function to increment the "value" property
-myObject.incr = function () {
-  if (typeof this.value === 'number') {
-    this.value++;
+function incrementAndCall(number, callback) {
+  if (typeof number === 'number' && typeof callback === 'function') {
+    const incrementedNumber = number + 1; // Increment the number
+    callback(incrementedNumber); // Call the provided callback function with the incremented number
   } else {
-    console.error('Value is not a number.');
+    console.error('Invalid arguments. The first argument must be a number, and the second argument must be a function.');
   }
-};
+}
 
-myObject.incr();
-console.log(myObject);
-myObject.incr();
-console.log(myObject);
-myObject.incr();
-console.log(myObject);
+// Example usage:
+function myFunction(result) {
+  console.log("The result is:", result);
+}
+
+incrementAndCall(5, myFunction); // This will call myFunction with the incremented value: "The result is: 6"
