@@ -1,1 +1,1 @@
-final int myVar = 333;
+let myVar = 333;
