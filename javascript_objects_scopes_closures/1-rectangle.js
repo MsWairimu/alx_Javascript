@@ -5,8 +5,7 @@ public class Rectangle {
     public Rectangle(int w, int h) {
         this.width = w;
         this.height = h;
-    }
-}
+
 const Rectangle = require('./1-rectangle');
 
 const r1 = new Rectangle(2, 3);
@@ -18,6 +17,8 @@ const r2 = new Rectangle(2, -3);
 console.log(r2);
 console.log(r2.width);
 cosle.log(r2.height);
+        }
+}
 
 const r3 = new Rectangle(2);
 console.log(r3):
