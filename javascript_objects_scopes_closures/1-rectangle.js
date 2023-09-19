@@ -1,3 +1,12 @@
+public class Rectangle {
+    private int width;
+    private int height;
+
+    public Rectangle(int w, int h) {
+        this.width = w;
+        this.height = h;
+    }
+}
 const Rectangle = require('./1-rectangle');
 
 const r1 = new Rectangle(2, 3);
