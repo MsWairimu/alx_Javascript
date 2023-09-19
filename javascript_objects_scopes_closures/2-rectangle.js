@@ -1,9 +1,7 @@
 #!/usr/bin/node
 module.exports = class Rectangle{
-    constructor(w = 0, h = 0) {
-        this.width = w;
-        this.height = h;
-    }
-};
+const Rectangle = require('./your-module'); // Replace './your-module' with the actual path to your module
 
-Object empty = new Object()
+const emptyRectangle = new Rectangle();
+
+console.log(emptyRectangle); // This will log an object with width and height both set to 0
