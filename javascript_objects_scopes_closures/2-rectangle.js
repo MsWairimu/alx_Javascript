@@ -9,3 +9,5 @@ module.exports = class Rectangle {
             // Initialize the instance attributes width and height
             this.width = w;
             this.height = h;
+        }
+    }
