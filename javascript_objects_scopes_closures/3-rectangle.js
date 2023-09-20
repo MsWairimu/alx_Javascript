@@ -10,12 +10,20 @@ module.exports = class Rectangle {
             this.height = h;
         }
     }
-  print() {
+}
+print() {
         if (typeof this.width === 'undefined' || typeof this.height === 'undefined') {
             console.log('Invalid Rectangle');
         } else {
+            const line = 'X'.repeat(this.width);
             for (let i = 0; i < this.height; i++) {
-                console.log('X'.repeat(this.width));
+                console.log(line);
             }
         }
     }
+}
+
+
+
+
+
