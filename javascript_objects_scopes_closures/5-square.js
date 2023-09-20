@@ -1,4 +1,4 @@
-const Rectangle = require('./5-Rectangle'){
+const Rectangle = require('./4-Rectangle'){
 }
 class Square extends Rectangle {
     constructor(size) {
