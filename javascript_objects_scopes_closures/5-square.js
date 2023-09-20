@@ -1,3 +1,4 @@
+
 const Rectangle = require('./4-Rectangle');
 
 class Square extends Rectangle {
@@ -7,4 +8,4 @@ class Square extends Rectangle {
     }
 }
 
-    module.exports = Square;
+module.exports = Square;
