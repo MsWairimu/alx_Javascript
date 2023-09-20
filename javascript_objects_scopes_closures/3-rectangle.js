@@ -12,11 +12,13 @@ module.exports = class Rectangle {
     }
 }
 print() {
-        if(w <= 0 || h <= 0 || typeof w !== 'number' || typeof h !== 'number' || !Number.isInteger(w) || !Number.isInteger(h)){
-            console.log('Invalid Rectangle');
-        } else {
+       
              for (let i = 0; i < this.height; i++) {
-                console.log('X'.repeat(this.width));
+                 let row = '';
+             for (let j = 0; i < this.width; i++) {
+                 row+ = 'X';
+             }
+                console.log(row)
             }
         }
     }
