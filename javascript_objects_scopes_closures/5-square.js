@@ -1,4 +1,3 @@
-
 const Rectangle = require('./4-Rectangle');
 
 class Square extends Rectangle {
