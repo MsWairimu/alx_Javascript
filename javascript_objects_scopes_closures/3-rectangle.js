@@ -12,16 +12,15 @@ module.exports = class Rectangle {
     }
 }
 print() {
-        if (typeof this.width === 'undefined' || typeof this.height === 'undefined') {
+        if(w <= 0 || h <= 0 || typeof w !== 'number' || typeof h !== 'number' || !Number.isInteger(w) || !Number.isInteger(h)){
             console.log('Invalid Rectangle');
         } else {
-            const line = 'X'.repeat(this.width);
-            for (let i = 0; i < this.height; i++) {
-                console.log(line);
+             for (let i = 0; i < this.height; i++) {
+                console.log('X'.repeat(this.width));
             }
         }
     }
-}
+
 
 
 
