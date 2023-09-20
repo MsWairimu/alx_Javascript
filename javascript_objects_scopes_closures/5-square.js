@@ -1,4 +1,4 @@
-module.exports = class Rectangle {
+module.exports = class Square {
     constructor (w, h) {
       this.width = w; 
       this.height = h;
