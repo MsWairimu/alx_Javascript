@@ -18,7 +18,14 @@ rotate() {
 }
 }
 
-                
+double() {
+      if (typeof this.width !== 'undefined' && typeof this.height !== 'undefined'){
+   // Multiply width and height by 2
+                this.width *= 2;
+                this.height *= 2;
+      }
+}
+    
     print() {
         if (typeof this.width === 'undefined' || typeof this.height === 'undefined') {
             console.log('Invalid Rectangle');
