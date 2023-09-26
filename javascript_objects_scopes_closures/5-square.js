@@ -10,7 +10,4 @@ class Square extends Rectangle {
   }
 }
 
-// Usage example
-const square = new Square(5);
-console.log("Square Area:", square.width, "x", square.height);
-square.print();
+module.exports = Square;
